@@ -8,23 +8,6 @@ rightArrow.addEventListener('click', () => {
     });
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* let SetaDireita = document.getElementById("seta-direita")
 
 SetaDireita.addEventListener('click', () => {

@@ -2,6 +2,8 @@ let rightArrow = document.getElementById("seta-direita")
 
 let images = document.getElementsByClassName('img')
 
+console.log(images)
+
 rightArrow.addEventListener('click', () => {
     images.forEach(() => {
         images.classList.add('show') 

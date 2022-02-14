@@ -5,9 +5,6 @@ const imagens = document.getElementsByClassName('img')
 console.log(imagens)
 
 setaDireita.addEventListener('click', () => {
-    
-    /* console.log(imagens) */
-
     imagens.forEach((imagem) => {
         imagem.classList.add('show')
     });

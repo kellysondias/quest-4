@@ -10,6 +10,66 @@ html {
     font-size: 62.5%;
 }
 
+.setas {
+    display: flex;
+    align-items: center;
+    width: 56px;
+    height: 78px;
+}
+
+.seta-esquerda {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.seta-direita {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 3%;
+    transform: rotate(180deg);
+    margin-right: 20px;
+}
+
+.seta-esquerda img, .seta-direita img {
+    cursor: pointer;
+}
+
+.slide .informacoes {
+    position: absolute;
+    top: 50px;
+    left: 115px;
+    background-color: white;
+    max-width: 402px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 54px 59px 53px 60px;
+}
+
+.slide .informacoes h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.slide .informacoes p {
+    line-height: 35px;
+    font-size: 2rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.slide .informacoes span {
+    display: inline-block;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
 .slide img {
     z-index: 1;
     width: 100%;

@@ -1,6 +1,6 @@
 const setaDireita = document.getElementById("seta-direita")
 
-const imagens = document.getElementsByClassName('img')
+const imagens = document.querySelectorAll(".imagem")
 
 console.log(imagens)
 

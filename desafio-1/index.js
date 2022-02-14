@@ -1,15 +1,15 @@
-const rightArrow = document.getElementById("seta-direita")
+const setaDireita = document.getElementById("seta-direita")
 
-const images = document.getElementsByClassName('img')
+const imagens = document.getElementsByClassName('img')
 
+console.log(imagens)
 
-rightArrow.addEventListener('click', () => {
+setaDireita.addEventListener('click', () => {
     
-    console.log(images)
+    /* console.log(imagens) */
 
-
-    images.forEach(() => {
-        images.classList.add('show') 
+    imagens.forEach((imagem) => {
+        imagem.classList.add('show')
     });
 })
 

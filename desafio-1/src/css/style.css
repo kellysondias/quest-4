@@ -8,65 +8,54 @@
 
 html {
     font-size: 62.5%;
-    background-color: blue;
-    height: 100vh;
 }
 
 main {
-    height: 100%;
-}
-
-.imagem {
-    background: url(../img/1.jpg) no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.primeiro-slide {
-    display: block;
-}
-
-.slide {
-    display: none;
+    position: relative;
 }
 
 .setas {
-    display: flex;
-    align-items: center;
     width: 56px;
     height: 78px;
 }
 
-.seta-esquerda {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;
-    position: absolute;
+#seta-esquerda {
     margin-left: 20px;
 }
 
-.seta-direita {
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    top: 2%;
-    transform: rotate(180deg);
-    margin-right: 20px;
-    z-index: 7;
+.imagem {
+    display: none;
 }
 
-.seta-esquerda img, .seta-direita img {
-    cursor: pointer;
-    background-color: red;
+.slide-ativo {
+    display: block;
+    height: 100vh;
+    transition: 0.8s ease-in-out;
 }
+
+
+.primeiro-slide {
+    background-image:url(../img/1.jpg);
+}
+
+.segundo-slide {
+    background-image:url(../img/2.jpg);
+}
+
+.terceiro-slide {
+    background-image:url(../img/3.jpg);
+}
+
+.quarto-slide {
+    background-image:url(../img/4.jpg);
+}
+
 
 .slide-ativo .informacoes {
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 115px;
-    background-color: white;
+    background-color: #fff;
     max-width: 402px;
     width: 100%;
     border-radius: 10px;
@@ -93,9 +82,28 @@ main {
     font-size: 2.5rem;
 }
 
-.informacoes {
-    z-index: 2;
+#seta-esquerda, #seta-direita {
+    top: 50%;
+    z-index: 7;
+    position: absolute;
 }
+
+#seta-direita {
+    background-color: red;
+    right: 0;
+    transform: rotate(180deg);
+    margin-right: 20px;
+}
+
+#seta-esquerda img, #seta-direita img {
+    cursor: pointer;
+}
+
+
+/* .informacoes {
+    z-index: 2;
+} */
+
 /* .imagem {
     display: none;
 } */

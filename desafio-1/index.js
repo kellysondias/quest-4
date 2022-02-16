@@ -1,4 +1,33 @@
+const setaEsquerda = document.getElementById("seta-esquerda")
 const setaDireita = document.getElementById("seta-direita")
+const imagens = document.querySelectorAll(".imagem")
+const slideAtivo = document.getElementById("slide-ativo")
+const primeiroSlide = document.querySelectorAll("primeiro-slide")
+let indice = 0
+
+console.log(imagens[indice])
+
+//Transformar em funções
+setaDireita.addEventListener('click', () => {
+    if (indice === imagens.length -1) {
+        //Mudar a opacidade
+        return
+    }
+
+    indice++
+    //Retirar a classe da primeira div
+    imagens.forEach((imagem) => {
+        console.log(imagem)
+        imagem.classList.remove('slide-ativo')
+    })
+    //Pegar a próxima imagem dentro do array
+    imagens[indice].classList.add('slide-ativo')
+
+}
+)
+//------TENTATIVAS-----//
+
+/* const setaDireita = document.getElementById("seta-direita")
 
 const imagens = document.querySelectorAll(".imagem")
 
@@ -9,7 +38,8 @@ setaDireita.addEventListener('click', () => {
         imagem.classList.add('show')
     });
 })
-
+ */
+ 
 /* let SetaDireita = document.getElementById("seta-direita")
 
 SetaDireita.addEventListener('click', () => {

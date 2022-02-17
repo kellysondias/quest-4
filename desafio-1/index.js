@@ -1,30 +1,48 @@
 const setaEsquerda = document.getElementById("seta-esquerda")
 const setaDireita = document.getElementById("seta-direita")
-const slideAtivo = document.getElementById("slide-ativo")
+const slideAtivo = document.querySelectorAll(".slide-ativo")
 const imagens = document.querySelectorAll(".imagem")
-let indice = 0
+let posicaoDoIndice = 0
 
 const primeiroSlide = document.getElementById("primeiro-slide")
 
-console.log(setaDireita)
+function ativarSetaEsquerda () {
+    if (posicaoDoIndice === 0) {
+        setaEsquerda.style.opacity = "50%"
+        setaEsquerda.style.cursor = "default"
+        return
+    } /* else {
+        setaEsquerda.style.opacity = "100%"
+        setaEsquerda.style.cursor = "pointer"
+    } */
+    
+    if (posicaoDoIndice > 0){
+        setaEsquerda.style.opacity = "100%"
+        setaEsquerda.style.cursor = "pointer"
+    }
+}
 
- function ativarSetaDireita () {
-    if (indice === imagens.length - 1) {
+function ativarSetaDireita () {
+    if (posicaoDoIndice === imagens.length - 1) {
         setaDireita.style.opacity = "50%"
-        setaDireita[0].style.cursor = "scroll"
+        setaDireita.style.cursor = "default"
         return
     }
 
-    indice++
+    posicaoDoIndice++
     //Retira a classe da primeira div
     imagens.forEach((imagem)=> {
         imagem.classList.remove('slide-ativo')
     })
     //Pega a próxima imagem dentro do array
-    imagens[indice].classList.add('slide-ativo')
+    imagens[posicaoDoIndice].classList.add('slide-ativo')
 }
 
 setaDireita.addEventListener('click', ativarSetaDireita)
+
+setaEsquerda.addEventListener('click', ativarSetaEsquerda())
+
+//------TENTATIVAS-----//
 
 /* setaDireita.addEventListener('click', () => {
     if (indice === imagens.length -1) {
@@ -40,8 +58,6 @@ setaDireita.addEventListener('click', ativarSetaDireita)
     //Pega a próxima imagem dentro do array
     imagens[indice].classList.add('slide-ativo')
 }) */
-
-//------TENTATIVAS-----//
 
 /* const setaDireita = document.getElementById("seta-direita")
 

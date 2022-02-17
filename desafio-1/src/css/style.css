@@ -15,6 +15,7 @@ main {
 }
 
 .setas {
+    background-color: red;
     width: 56px;
     height: 78px;
 }
@@ -27,12 +28,11 @@ main {
     display: none;
 }
 
-.slide-ativo {
+#slide-ativo {
     display: block;
     height: 100vh;
     transition: 0.8s ease-in-out;
 }
-
 
 .primeiro-slide {
     background-image:url(../img/1.jpg);
@@ -50,8 +50,11 @@ main {
     background-image:url(../img/4.jpg);
 }
 
+.primeiro-slide span {
+    color: #c50000;
+}
 
-.slide-ativo .informacoes {
+#slide-ativo .informacoes {
     position: absolute;
     top: 30px;
     left: 115px;
@@ -62,23 +65,23 @@ main {
     padding: 54px 59px 53px 60px;
 }
 
-.slide-ativo .informacoes h2 {
+#slide-ativo .informacoes h2 {
     font-size: 5rem;
     font-weight: 400;
     margin-bottom: 40px;
 }
 
-.slide-ativo .informacoes p {
+#slide-ativo .informacoes p {
     line-height: 35px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 300;
     width: 100%;
 }
 
-.slide-ativo .informacoes span {
-    display: inline-block;
-    margin-top: 40px;
+#slide-ativo .informacoes span {
     font-weight: 700;
+    display: inline-block;
+    margin-top: 23px;
     font-size: 2.5rem;
 }
 
@@ -91,14 +94,13 @@ main {
 #seta-direita {
     background-color: red;
     right: 0;
-    transform: rotate(180deg);
     margin-right: 20px;
-}
-
-#seta-esquerda img, #seta-direita img {
     cursor: pointer;
 }
 
+#seta-esquerda img {
+    cursor: pointer;
+}
 
 /* .informacoes {
     z-index: 2;

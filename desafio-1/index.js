@@ -1,30 +1,46 @@
 const setaEsquerda = document.getElementById("seta-esquerda")
 const setaDireita = document.getElementById("seta-direita")
-const imagens = document.querySelectorAll(".imagem")
 const slideAtivo = document.getElementById("slide-ativo")
-const primeiroSlide = document.querySelectorAll("primeiro-slide")
+const imagens = document.querySelectorAll(".imagem")
 let indice = 0
 
-console.log(imagens[indice])
+const primeiroSlide = document.getElementById("primeiro-slide")
 
-//Transformar em funções
-setaDireita.addEventListener('click', () => {
-    if (indice === imagens.length -1) {
-        //Mudar a opacidade
+console.log(setaDireita)
+
+ function ativarSetaDireita () {
+    if (indice === imagens.length - 1) {
+        setaDireita.style.opacity = "50%"
+        setaDireita.style.cursor = "scroll"
         return
     }
 
     indice++
-    //Retirar a classe da primeira div
-    imagens.forEach((imagem) => {
-        console.log(imagem)
+    //Retira a classe da primeira div
+    imagens.forEach((imagem)=> {
         imagem.classList.remove('slide-ativo')
     })
-    //Pegar a próxima imagem dentro do array
+    //Pega a próxima imagem dentro do array
     imagens[indice].classList.add('slide-ativo')
-
 }
-)
+
+setaDireita.addEventListener('click', ativarSetaDireita)
+
+/* setaDireita.addEventListener('click', () => {
+    if (indice === imagens.length -1) {
+        setaDireita.style.opacity = "50%"
+        return
+    }
+
+    indice++
+    //Retira a classe da primeira div
+    imagens.forEach((imagem)=> {
+        imagem.classList.remove('slide-ativo')
+    })
+    //Pega a próxima imagem dentro do array
+    imagens[indice].classList.add('slide-ativo')
+}) */
+
 //------TENTATIVAS-----//
 
 /* const setaDireita = document.getElementById("seta-direita")

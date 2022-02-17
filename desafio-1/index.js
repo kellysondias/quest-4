@@ -11,7 +11,7 @@ console.log(setaDireita)
  function ativarSetaDireita () {
     if (indice === imagens.length - 1) {
         setaDireita.style.opacity = "50%"
-        setaDireita.style.cursor = "scroll"
+        setaDireita[0].style.cursor = "scroll"
         return
     }
 

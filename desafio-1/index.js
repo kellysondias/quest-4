@@ -4,43 +4,37 @@ const slideAtivo = document.querySelectorAll(".slide-ativo")
 const imagens = document.querySelectorAll(".imagem")
 let posicaoDoIndice = 0
 
-const primeiroSlide = document.getElementById("primeiro-slide")
+setaEsquerda.style.opacity = "0.5"
+setaEsquerda.style.cursor = "default"
 
-function ativarSetaEsquerda () {
-    if (posicaoDoIndice === 0) {
-        setaEsquerda.style.opacity = "0.5"
-        setaEsquerda.style.cursor = "default"
-        return
-    } /* else {
-        setaEsquerda.style.opacity = "100%"
-        setaEsquerda.style.cursor = "pointer"
-    } */
+function ativarSetaDireita () {
+    function aplicarOpacidade (ultimoSlide) {
+        if (ultimoSlide === imagens.length - 1) {
+            setaDireita.style.opacity = "0.5"
+            setaDireita.style.cursor = "default"
+            return
+        }
+    }
+
+    posicaoDoIndice++
+
+    imagens.forEach((imagem)=> {
+        imagem.classList.remove('slide-ativo')
+    })
+
+    imagens[posicaoDoIndice].classList.add('slide-ativo')
     
     if (posicaoDoIndice > 0){
         setaEsquerda.style.opacity = "1"
         setaEsquerda.style.cursor = "pointer"
     }
-}
 
-function ativarSetaDireita () {
-    if (posicaoDoIndice === imagens.length - 1) {
-        setaDireita.style.opacity = "0.5"
-        setaDireita.style.cursor = "default"
-        return
-    }
-
-    posicaoDoIndice++
-    //Retira a classe da primeira div
-    imagens.forEach((imagem)=> {
-        imagem.classList.remove('slide-ativo')
-    })
-    //Pega a próxima imagem dentro do array
-    imagens[posicaoDoIndice].classList.add('slide-ativo')
+    aplicarOpacidade(posicaoDoIndice)
 }
 
 setaDireita.addEventListener('click', ativarSetaDireita)
 
-setaEsquerda.addEventListener('click', ativarSetaEsquerda())
+/* setaEsquerda.addEventListener('click', ativarSetaEsquerda) */
 
 //------TENTATIVAS-----//
 

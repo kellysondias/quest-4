@@ -8,7 +8,7 @@ const primeiroSlide = document.getElementById("primeiro-slide")
 
 function ativarSetaEsquerda () {
     if (posicaoDoIndice === 0) {
-        setaEsquerda.style.opacity = "50%"
+        setaEsquerda.style.opacity = "0.5"
         setaEsquerda.style.cursor = "default"
         return
     } /* else {
@@ -17,14 +17,14 @@ function ativarSetaEsquerda () {
     } */
     
     if (posicaoDoIndice > 0){
-        setaEsquerda.style.opacity = "100%"
+        setaEsquerda.style.opacity = "1"
         setaEsquerda.style.cursor = "pointer"
     }
 }
 
 function ativarSetaDireita () {
     if (posicaoDoIndice === imagens.length - 1) {
-        setaDireita.style.opacity = "50%"
+        setaDireita.style.opacity = "0.5"
         setaDireita.style.cursor = "default"
         return
     }

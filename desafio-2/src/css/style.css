@@ -1,9 +1,22 @@
 .cartao {
     display: flex;
+    /* margin: 0 auto; */
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-do-cartao);
+    max-width: 655px;
+    width: 100%;
 }
 
+.cartao .imagem {position: relative;}
+
 .cartao .imagem img {
-    width: 100%;
     max-width: 278px;
 }
+
+
+
+/* .cartao .faq .texto {
+    display: none;
+} */

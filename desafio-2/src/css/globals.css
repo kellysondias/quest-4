@@ -17,7 +17,12 @@
 
 html {
     background-color: var(--cor-de-fundo);
+    font-size: 62.5%;
 }
+
+/* body {
+    height: 100vh;
+} */
 
 h2,h3,p {
     font-family: var(--fonte)

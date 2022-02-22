@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --cor-de-fundo: #e5e5e5;
+    --cor-do-cartao: #fcfcfc;
+    --cor-da-linha: #d4d4d4;
+    --cor-do-texto: #000000;
+    --cor-da-seta-aberta: #f16b16;
+}
+
+:root {
+    --fonte:'Roboto', sans-serif;
+    --fonte-peso-grande: 700;
+    --fonte-peso-medio: 500;
+    --fonte-peso-leve: 300;
+}
+
+html {
+    background-color: var(--cor-de-fundo);
+}
+
+h2,h3,p {
+    font-family: var(--fonte)
+}
+
+h2 {
+    font-weight: var(--fonte-peso-grande);
+}
+
+h3 {
+    font-weight: var(--fonte-peso-medio);
+}
+
+p {
+    font-weight: var(--fonte-peso-leve);
+}

@@ -1,0 +1,9 @@
+.cartao {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.cartao .imagem img {
+    width: 100%;
+    max-width: 278px;
+}

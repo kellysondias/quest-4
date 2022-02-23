@@ -3,21 +3,26 @@
     margin: 0 auto;
     margin-top: 15%;
     transform: translate(-2%, -7%);
-    padding: 60px 25px 0 15px;
+    padding: 60px 0 5px 15px;
     flex-flow: row nowrap;
-    /* justify-content: center;
-    align-items: center; */
     background-color: var(--cor-do-cartao);
     max-width: 655px;
     width: 100%;
+    height: 100%;
     border-radius: 21px;
     box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
 }
 
+.cartao .imagem img {
+    max-width: 278px;
+    position: relative;
+    right: 91px;
+    bottom: 32px;
+}
+
 .cartao .faq {
     position: relative;
-    right: 27px;
-    
+    right: 48px;
 }
 
 .cartao .faq h2 {
@@ -29,7 +34,7 @@
 .cartao .faq .caixa-de-texto h3 {
     font-size: 1.7rem;
     font-weight: var(--fonte-peso-medio);
-    
+    padding-right: 41px;
 }
 
 .cartao .faq .caixa-de-texto h3::after {
@@ -59,13 +64,86 @@
     margin-top: 10px;
 }
 
-.cartao .imagem img {
-    max-width: 278px;
-    position: relative;
-    right: 68px;
-    bottom: 21px;
+
+.cartao .faq .texto {
+    display: none;
 }
 
-/* .cartao .faq .texto {
-    display: none;
-} */
+@media (max-width: 857px) {
+    .cartao {
+        display: flex;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        transform: translateX(2%);
+        padding-bottom: 60px;
+        flex-direction: column;
+        width: 90%;
+        max-width: 450px;
+        height: 100%;
+    }
+
+    .cartao .imagem img {
+        max-width: 278px;
+        right: -15%;
+        width: 100%;
+    }
+
+    .cartao .faq {
+        position: static;
+        right: 0;
+    }
+
+    .cartao .faq h2 {
+        text-align: center;
+        margin-right: 35px;
+    }
+
+    .cartao .faq .caixa-de-texto h3::after {
+        position: absolute;
+        right: 24px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .cartao {
+        display: flex;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-left: auto;
+        transform: translateX(2%);
+        padding-bottom: 60px;
+        flex-direction: column;
+        width: 80%;
+        max-width: 450px;
+    }
+
+    .cartao .imagem {
+        margin: 0 auto;
+    }
+
+    .cartao .imagem img {
+        right: 0;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .cartao .faq .caixa-de-texto h3 {
+        width: 70%;
+    }
+}
+
+@media (max-width: 390px) {
+    .cartao .imagem img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 330px) {
+    .cartao .faq .caixa-de-texto h3::after {
+        position: absolute;
+        right: 0;
+        margin-right: 3%;
+    }
+}

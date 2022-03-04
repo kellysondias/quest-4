@@ -14,6 +14,12 @@ main {
     position: relative;
 }
 
+/* body {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+} */
+
 .setas {
     width: 56px;
     height: 78px;
@@ -64,8 +70,19 @@ main {
     color: #10acdd;
 }
 
+.primeiro-slide,
+.segundo-slide,
+.terceiro-slide,
+.quarto-slide {
+    background-repeat: no-repeat;
+}
+
 .slide-ativo .informacoes {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     position: absolute;
+    margin: 0 auto;
     top: 30px;
     left: 115px;
     background-color: #fff;
@@ -107,50 +124,8 @@ main {
     cursor: pointer;
 }
 
-/* .informacoes {
-    z-index: 2;
-} */
-
-/* .imagem {
-    display: none;
-} */
-
-
-/* label img {
-    width: 56px;
-    height: 78px;
-} */
-
-/* label input {
-    display: none;
-} */
-
-/* div {
-    background-color: white;
-    max-width: 350px;
-    width: 100%;
-    margin-left: 180px;
-    padding: 69px 60px 0 60px;
-    border-radius: 10px;
-} */
-
-/* div h1 {
-    font-size: 40px;
-    font-weight: 400;
-} */
-
-/* div p {
-    font-weight: 300;
-    font-size: 20px;
-    max-width: 401px;
-    width: 100%;
-    margin-top: 60px;
-} */
-
-/* div span {
-    display: inline-block;
-    color: #C50000;
-    font-weight: 700;
-    font-size: 25px;
-    padding: 40px 0 71px 0;
-} */
+@media (min-height: 690px) {
+    .slide-ativo .informacoes {
+        top: 13%;
+    }
+}

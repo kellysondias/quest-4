@@ -75,6 +75,7 @@ main {
 .terceiro-slide,
 .quarto-slide {
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slide-ativo .informacoes {

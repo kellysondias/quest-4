@@ -14,11 +14,11 @@ main {
     position: relative;
 }
 
-/* body {
+body {
     display: flex;
     flex-flow: column nowrap;
     height: 100vh;
-} */
+}
 
 .setas {
     width: 56px;
@@ -76,6 +76,7 @@ main {
 .quarto-slide {
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .slide-ativo .informacoes {
@@ -123,10 +124,4 @@ main {
     right: 0;
     margin-right: 20px;
     cursor: pointer;
-}
-
-@media (min-height: 690px) {
-    .slide-ativo .informacoes {
-        top: 13%;
-    }
 }

@@ -1,17 +1,10 @@
 .cartao {
     display: flex;
-    margin: 0 auto;
-    margin-top: 15%;
-    transform: translate(-2%, -7%);
-    /* justify-content: center;
-    height: 100vh;
-    align-items: center; */
     flex-flow: row nowrap;
     padding: 60px 0 5px 15px;
     background-color: var(--cor-do-cartao);
     max-width: 655px;
     width: 100%;
-    height: 100%;
     border-radius: 21px;
     box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
 }
@@ -91,20 +84,24 @@
 @media (max-width: 857px) {
     .cartao {
         display: flex;
-        margin-top: 15%;
+        margin-top: 6%;
         margin-bottom: 5%;
         transform: translateX(2%);
         padding-bottom: 60px;
         flex-direction: column;
-        width: 90%;
-        max-width: 450px;
-        height: 100%;
+        max-width: 300px;
+        height: 450px;
+    }
+
+    .cartao .imagem {
+        display: flex;
+        justify-content: center;
     }
 
     .cartao .imagem img {
         max-width: 278px;
-        right: -15%;
-        width: 100%;
+        max-width: 243px;
+        right: 0;
     }
 
     .cartao .faq {
@@ -136,18 +133,11 @@
         transform: translateX(2%);
         padding-bottom: 60px;
         flex-direction: column;
-        width: 80%;
-        max-width: 450px;
     }
 
     .cartao .imagem {
         margin: 0 auto;
     }
-
-    .cartao .imagem img {
-        right: 0;
-    }
-
 }
 
 @media (max-width: 450px) {

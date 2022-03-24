@@ -27,18 +27,10 @@ body {
     height: 100vh;
 }
 
-h2,h3,p {
-    font-family: var(--fonte)
-}
+h2,h3,p {font-family: var(--fonte)}
 
-h2 {
-    font-weight: var(--fonte-peso-grande);
-}
+h2 {font-weight: var(--fonte-peso-grande);}
 
-h3 {
-    font-weight: var(--fonte-peso-medio);
-}
+h3 {font-weight: var(--fonte-peso-medio);}
 
-p {
-    font-weight: var(--fonte-peso-leve);
-}
+p {font-weight: var(--fonte-peso-leve);}

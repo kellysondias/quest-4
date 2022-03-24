@@ -1,13 +1,30 @@
 @media (max-width: 733px) {
     .slide-ativo .informacoes {
         max-width: 300px;
-        width: 40%;
         text-align: center;
     }
 
-    .slide-ativo .informacoes h2 {
-        margin: 0 auto 40px auto;
-        font-size: 4rem;
-        max-width: 250px;
+    .slide-ativo .informacoes h2 {font-size: 3.4rem;}
+
+    .slide-ativo .informacoes p {
+        line-height: 29px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 611px) {
+    .slide-ativo .informacoes {
+        width: 200px;
+    }
+
+    .slide-ativo .informacoes h2 {font-size: 2.7rem;}
+
+    .slide-ativo .informacoes p {
+        line-height: 20px;
+        font-size: 1.3rem;
+    }
+
+    .slide-ativo .informacoes span {
+        font-size: 2rem;
     }
 }

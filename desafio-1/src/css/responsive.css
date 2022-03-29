@@ -14,17 +14,32 @@
 
 @media (max-width: 611px) {
     .slide-ativo .informacoes {
-        width: 200px;
+        margin-top: 32%;
+        padding: 5%;
+        max-width: 30%;
+        left: 50px;
     }
 
-    .slide-ativo .informacoes h2 {font-size: 2.7rem;}
+    .slide-ativo .informacoes h2 {font-size: 205%;}
 
     .slide-ativo .informacoes p {
+        overflow-y: scroll;
+        height: 100px;
         line-height: 20px;
         font-size: 1.3rem;
     }
 
     .slide-ativo .informacoes span {
-        font-size: 2rem;
+        font-size: 162%;
+    }
+
+    .setas img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 328px) {
+    #seta-esquerda {
+        margin-left: 10px;
     }
 }

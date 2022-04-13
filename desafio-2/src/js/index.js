@@ -1,9 +1,12 @@
-const caixaDeTexto = document.querySelectorAll('.caixa-de-texto')
+const perguntas = document.querySelectorAll('.caixa-de-texto')
 
-caixaDeTexto.forEach(texto => {
-    texto.addEventListener('click', () => {
-        textoAtivo = document.querySelector
-        ('.texto-ativo')
-        textoAtivo ? texto.classList.remove('texto-ativo') : texto.classList.add('texto-ativo')
+perguntas.forEach( pergunta => {
+    pergunta.addEventListener('click', () => {
+        const perguntaAtiva = document.querySelector('.texto-ativo')
+        
+        pergunta.classList.add('texto-ativo')
+
+        if (perguntaAtiva) perguntaAtiva.classList.remove('texto-ativo')
+
     })
 })

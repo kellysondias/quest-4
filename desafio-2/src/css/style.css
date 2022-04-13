@@ -46,8 +46,7 @@
     margin: 5px 1.5% 0 auto;
 }
 
-.cartao .faq .caixa-de-texto h3:hover::after,
-.cartao .faq .caixa-de-texto h3:active::after {
+.cartao .faq .caixa-de-texto h3:hover::after {
     content: '';
     background: url(../img/seta-colorida.png) no-repeat center center;
     display: inline-block;
@@ -62,19 +61,24 @@
     width: 15px;
 }
 
-.cartao .faq .caixa-de-texto:nth-child(n+3) h3 {
-    margin-top: 15px;
+.cartao .faq .caixa-de-texto.ativo h3::after {
+    background: url(../img/seta-colorida.png) no-repeat center center;
+    background-size: cover;
 }
+
+.cartao .faq .caixa-de-texto:nth-child(n+3) h3 {margin-top: 15px;}
 
 .cartao .faq .caixa-de-texto:nth-child(-1n+3) {
     border-bottom: 1px solid var(--cor-da-linha);
     padding-bottom: 15px;
 }
 
-.cartao .faq .caixa-de-texto .texto-ativo {
+.cartao .faq .caixa-de-texto p {
     display: none;
     font-size: 1.5rem;
     margin-top: 10px;
 }
+
+.cartao .faq .caixa-de-texto.texto-ativo p {display: block;}
 
 .cartao .faq .caixa-de-texto:last-child .texto-ativo {padding-bottom: 8px;}

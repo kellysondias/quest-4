@@ -79,8 +79,6 @@
     margin-top: 10px;
 }
 
-.fechar {display: none;}
-
 .cartao .faq .caixa-de-texto.texto-ativo p {display: block;}
 
 .cartao .faq .caixa-de-texto:last-child .texto-ativo {padding-bottom: 8px;}

@@ -61,7 +61,7 @@
     width: 15px;
 }
 
-.cartao .faq .caixa-de-texto.ativo h3::after {
+.cartao .faq .caixa-de-texto.texto-ativo h3::after {
     background: url(../img/seta-colorida.png) no-repeat center center;
     background-size: cover;
 }

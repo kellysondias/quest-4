@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.text {margin-right: 72.75px;}
+
+.text h1 {
+    font-size: 2.0rem;
+    width: 287.25px;
+}
+
+.text p {
+    margin-top: 11px;
+    font-size: 1.5rem;
+    width: 300px;
+}
+
+.text h1,
+.text p {color: var(--white);}
+
+.form-section form {
+    max-width: 298px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 21px;
+    background-color: var(--white);
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 5px;
+}

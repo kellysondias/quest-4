@@ -20,19 +20,36 @@ main {
 .text p {color: var(--white);}
 
 .form-section form {
-    max-width: 298px;
     display: flex;
     flex-flow: column wrap;
-    padding: 20px 21px;
+    align-content: center;
+    width: 100%;
+    padding: 20px 10px;
     background-color: var(--white);
 }
 
-input {
-    width: 100%;
+.form-section form input, 
+.form-section form textarea,
+.form-section form span {font-size: 15px;}
+
+.form-section form input {
     margin-bottom: 15px;
+    padding: 7px 0;
 }
 
-textarea {
-    width: 100%;
+.form-section form input, 
+.form-section form textarea {
+    width: 298px;
+    padding-left: 10px;
+    border: #000 solid 1px;
+    border-radius: 5px;
+}
+
+.form-section form textarea {
+    height: 100px;
     margin-bottom: 5px;
+}
+
+.form-section form span {
+    margin: 7px 0 20px -5px;
 }

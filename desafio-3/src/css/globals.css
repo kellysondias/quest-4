@@ -30,7 +30,7 @@ body {
 
 h1 {font-weight: var(--bolder-font-weight);}
 
-h1,p,input,input::placeholder,textarea,textarea::placeholder {font-family: var(--font);}
+h1,p,input,span,input::placeholder,textarea,textarea::placeholder {font-family: var(--font);}
 
 input,input::placeholder,
 textarea, textarea::placeholder {

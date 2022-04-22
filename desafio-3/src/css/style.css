@@ -3,11 +3,17 @@ main {
     flex-flow: row wrap;
 }
 
-.text {margin-right: 72.75px;}
+.text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-right: 72.75px;
+}
 
 .text h1 {
     font-size: 2.0rem;
     width: 287.25px;
+    line-height: 23.44px;
 }
 
 .text p {
@@ -24,13 +30,13 @@ main {
     flex-flow: column wrap;
     align-content: center;
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px 15px 10px 15px;
     background-color: var(--white);
 }
 
 .form-section form input, 
 .form-section form textarea,
-.form-section form span {font-size: 15px;}
+.form-section form span {font-size: 1.5rem;}
 
 .form-section form input {
     margin-bottom: 15px;
@@ -39,9 +45,10 @@ main {
 
 .form-section form input, 
 .form-section form textarea {
-    width: 298px;
+    max-width: 298px;
+    width: 100%;
     padding-left: 10px;
-    border: #000 solid 1px;
+    border: #000000 solid 1px;
     border-radius: 5px;
 }
 
@@ -52,4 +59,13 @@ main {
 
 .form-section form span {
     margin: 7px 0 20px -5px;
+}
+
+.form-section form input[type="button"] {
+    width: 300px;
+    margin: 0 auto;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 19px;
 }

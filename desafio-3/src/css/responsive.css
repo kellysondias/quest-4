@@ -1,0 +1,46 @@
+@media (max-width: 750px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        margin: 0 0 0 4%;
+        text-align: center;
+    }
+
+    .text h1 {line-height: 22px;}
+
+    .text p {
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 621px) {
+    .text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 385px) {
+    .text h1 {
+        font-size: 1.5rem;
+        line-height: 16px;
+        margin-left: 4%;
+    }
+
+    .text p {
+        font-size: 1.3rem;
+        line-height: 13px;
+    }
+
+    .form-section form input, 
+    .form-section form textarea {
+        max-width: 220px;
+        width: 90%;
+}
+}

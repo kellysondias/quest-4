@@ -19,6 +19,7 @@ main {
 .text p {
     margin-top: 11px;
     font-size: 1.5rem;
+    line-height: 17.58px;
     width: 300px;
 }
 
@@ -30,7 +31,7 @@ main {
     flex-flow: column wrap;
     align-content: center;
     width: 100%;
-    padding: 20px 15px 10px 15px;
+    padding: 20px 12px 10px 12px;
     background-color: var(--white);
 }
 
@@ -40,7 +41,7 @@ main {
 
 .form-section form input {
     margin-bottom: 15px;
-    padding: 7px 0;
+    padding: 8px 0;
 }
 
 .form-section form input, 
@@ -54,12 +55,11 @@ main {
 
 .form-section form textarea {
     height: 100px;
+    padding-top: 8px;
     margin-bottom: 5px;
 }
 
-.form-section form span {
-    margin: 7px 0 20px -5px;
-}
+.form-section form span {margin: 7px 0 20px -5px;}
 
 .form-section form input[type="button"] {
     width: 300px;
@@ -67,5 +67,5 @@ main {
     border: none;
     padding: 12px;
     cursor: pointer;
-    margin-bottom: 19px;
+    margin-bottom: 12px;
 }

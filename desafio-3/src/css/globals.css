@@ -11,6 +11,7 @@
 
 :root {
     --font:'Roboto', sans-serif;
+    --regular-font-weight: 400;
     --bold-font-weight: 700;
     --bolder-font-weight: 900;
 }
@@ -21,11 +22,12 @@ html {
 }
 
 body {
-    background-color: #a06688;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(180deg, #d4679e 15%, #817bd3, #6d80dF);
+    background-attachment: fixed;
 }
 
 h1 {font-weight: var(--bolder-font-weight);}

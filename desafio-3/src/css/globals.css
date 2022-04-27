@@ -3,7 +3,7 @@
 :root {
     --white: #ffffff;
     --main-border-color: #000;
-    --error-border-color: #f52e2e;
+    --required--color: #f52e2e;
     --value-border-color: #00c22b;
     --bg-button-color: #3ccc87;
     --input-color: #a8a8a8;

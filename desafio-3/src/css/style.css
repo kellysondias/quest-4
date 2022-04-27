@@ -56,14 +56,13 @@ main {
 .form-section form div textarea {
     height: 100px;
     padding-top: 8px;
-    margin-bottom: 5px;
 }
 
 .form-section form span {
-    background-color: rgb(53, 62, 184);
     margin: 7px 0 20px -5px; 
-    margin-top: 70px;
 }
+
+.form-section form #required-warning {margin-top: 15px;}
 
 .form-section form input[type="button"] {
     width: 300px;

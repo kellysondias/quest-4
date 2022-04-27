@@ -62,6 +62,7 @@ main {
 .form-section form span {
     background-color: rgb(53, 62, 184);
     margin: 7px 0 20px -5px; 
+    margin-top: 70px;
 }
 
 .form-section form input[type="button"] {
@@ -87,7 +88,6 @@ main {
 
 .form-section form div:nth-child(4) span {
     top: 106px;
-    padding-bottom: 4px;
 }
 
 .form-section form div {

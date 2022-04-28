@@ -2,7 +2,7 @@
 
 :root {
     --white: #ffffff;
-    --main-border-color: #000;
+    --border-color: #000;
     --required--color: #f52e2e;
     --value-border-color: #00c22b;
     --bg-button-color: #3ccc87;
@@ -34,8 +34,8 @@ h1 {font-weight: var(--bolder-font-weight);}
 
 h1,p,input,span,input::placeholder,textarea,textarea::placeholder {font-family: var(--font);}
 
-input,input::placeholder,
-textarea, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: var(--input-color);
     font-weight: 700;
 }

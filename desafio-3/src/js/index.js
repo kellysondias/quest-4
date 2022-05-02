@@ -1,7 +1,13 @@
-const inputs = document.getElementsByTagName('input')
-const textArea = document.getElementsByTagName('textarea')
-const button = document.getElementById('btn')
+const inputs = document.querySelectorAll('input')
+const textArea = document.querySelectorAll('textarea')
+const buttons = document.getElementById('btn')
 
-button.addEventListener('click', () => {
-    console.log('xibiu')
+function addInputConditional() {
+    inputs.forEach(input => {
+        if (input.value == undefined) console.log('Condicional funcionando')
+    })
+}
+
+buttons.addEventListener('click',() => {
+    addInputConditional()
 })

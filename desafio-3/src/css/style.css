@@ -94,8 +94,17 @@ main {
     justify-content: center;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    border: none;
+    border: 1px solid var(--value-border-color);
+    transition: 0.2s ease-in-out;
+}
+
 .check {
     border-color: #00c22b;
+    transition: 0.1s ease-in-out;
 }
 
 .error {border-color: var(--required--color);}

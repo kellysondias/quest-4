@@ -10,14 +10,14 @@ const button = document.getElementById('btn')
 
 /* form.addEventListener('submit', event => {
     event.preventDefault()
-})
+}) */
 
 inputs.forEach(input => {
     input.addEventListener('keypress', () => input.style.borderColor = '#00c22b')
 })
 
 textArea.addEventListener('keypress', () => textArea.style.borderColor = '#00c22b')
- */
+
 /* form.addEventListener('submit', event => {
     event.preventDefault()
 

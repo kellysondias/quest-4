@@ -1,10 +1,14 @@
+/* ToDo: - Procurar input reset
+         - Validação dos formulários obrigatórios 
+*/
+
 
 const form = document.querySelector('form')
 const inputs = document.querySelectorAll('input')
 const textArea = document.querySelector('textarea')
 const button = document.getElementById('btn')
 
-form.addEventListener('submit', event => {
+/* form.addEventListener('submit', event => {
     event.preventDefault()
 })
 
@@ -13,10 +17,7 @@ inputs.forEach(input => {
 })
 
 textArea.addEventListener('keypress', () => textArea.style.borderColor = '#00c22b')
-
-
-
-
+ */
 /* form.addEventListener('submit', event => {
     event.preventDefault()
 

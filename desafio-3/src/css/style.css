@@ -94,6 +94,8 @@ main {
     justify-content: center;
 }
 
-.check {border-color: var(--value-border-color);}
+.check {
+    border-color: #00c22b;
+}
 
 .error {border-color: var(--required--color);}

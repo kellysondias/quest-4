@@ -19,7 +19,9 @@ textInput.forEach(el => {
 
 button.addEventListener('click', () => {
     const textInput = document.querySelectorAll('.text-input')
-    if (textInput.value == '') {
-        textInput.forEach(elemento => elemento.classList.add('error'))
-    }
+    textInput.forEach(el => {
+        if (el.value == '') {
+            el.classList.add('error')
+        }
+    })
 })

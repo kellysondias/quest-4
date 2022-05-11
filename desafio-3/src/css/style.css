@@ -99,12 +99,12 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
     border: none;
     border: 1px solid var(--value-border-color);
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
-.form-section form div .check {border-color: var(--value-border-color);}
+.form-section form div .check {
+    border-color: var(--value-border-color);
+    transition: 0.1s ease-in-out;
+}
 
 .form-section form div .error {border-color: var(--required--color);}
-
-.form-section form div .check,
-.form-section form div .error {transition: 0.1s ease-in-out;}

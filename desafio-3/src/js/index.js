@@ -20,6 +20,6 @@ textInput.forEach(el => {
 button.addEventListener('click', () => {
     const textInput = document.querySelectorAll('.text-input')
     if (textInput.value == '') {
-        textInput.classList.add('error')
+        textInput.forEach(elemento => elemento.classList.add('error'))
     }
 })

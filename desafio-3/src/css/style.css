@@ -102,9 +102,9 @@ input:-webkit-autofill:focus {
     transition: 0.2s ease-in-out;
 }
 
-.check {
-    border-color: #00c22b;
-    transition: 0.1s ease-in-out;
-}
+.form-section form div .check {border-color: var(--value-border-color);}
 
-.error {border-color: var(--required--color);}
+.form-section form div .error {border-color: var(--required--color);}
+
+.form-section form div .check,
+.form-section form div .error {transition: 0.1s ease-in-out;}

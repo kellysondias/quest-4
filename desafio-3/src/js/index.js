@@ -1,38 +1,25 @@
 /* ToDo: - Procurar input reset
-         - Validação dos formulários obrigatórios 
+         - Validação dos formulários obrigatórios  
+         - Transformar event listener do button em função limpa
 */
 
-
 const form = document.querySelector('form')
-const inputs = document.querySelectorAll('input')
-const textArea = document.querySelector('textarea')
 const button = document.getElementById('btn')
+const textInput = document.querySelectorAll('.text-input')
 
-/* form.addEventListener('submit', event => {
+form.addEventListener('submit', event => {
     event.preventDefault()
-}) */
-
-inputs.forEach(input => {
-    input.addEventListener('keypress', () => input.style.borderColor = '#00c22b')
 })
 
-textArea.addEventListener('keypress', () => textArea.style.borderColor = '#00c22b')
-
-/* form.addEventListener('submit', event => {
-    event.preventDefault()
-
-    this.forEach(element => {
-        if (element.value == "") console.log('Condicional funcionando')
+textInput.forEach(el => {
+    el.addEventListener('keypress', () => {
+        el.classList.add('check')
     })
-}) */
+})
 
-/* function addInputConditional() {
-    inputs.forEach(input => {
-        if (input.value === "") console.log('Condicional funcionando')
-    })
-} */
-
-
-/* buttons.addEventListener('click',() => {
-    addInputConditional()
-}) */
+button.addEventListener('click', () => {
+    const textInput = document.querySelectorAll('.text-input')
+    if (textInput.value == '') {
+        textInput.classList.add('error')
+    }
+})

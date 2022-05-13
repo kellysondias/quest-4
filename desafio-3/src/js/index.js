@@ -30,5 +30,3 @@ button.addEventListener('click', () => {
         } 
     })
 })
-
-/* textBox.innerHTML */

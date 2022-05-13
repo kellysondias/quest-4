@@ -92,6 +92,8 @@ main {
 .form-section form div {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
 input:-webkit-autofill,
@@ -101,10 +103,3 @@ input:-webkit-autofill:focus {
     border: 1px solid var(--value-border-color);
     transition: 0.1s ease-in-out;
 }
-
-.form-section form div .check {
-    border-color: var(--value-border-color);
-    transition: 0.1s ease-in-out;
-}
-
-.form-section form div .error {border-color: var(--required--color);}

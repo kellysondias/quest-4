@@ -1,25 +1,34 @@
-/* ToDo: - Procurar input reset
-         - Validação dos formulários obrigatórios  
-         - Transformar event listener do button em função limpa
+/* ToDo: - Validação dos formulários obrigatórios  
+
+    Refatoração: - Procurar input reset
+                 - Transformar event listener do button em função limpa
 */
 
 const form = document.querySelector('form')
 const button = document.getElementById('btn')
-const textInput = document.querySelectorAll('.text-input')
+const textInputs = document.querySelectorAll('.text-input')
+const textBoxes = document.querySelectorAll('div')
 
 form.addEventListener('submit', event => {
     event.preventDefault()
 })
 
-textInput.forEach(el => {
+textInputs.forEach(el => {
     el.addEventListener('keypress', () => {
         el.classList.add('check')
     })
 })
 
 button.addEventListener('click', () => {
-    const textInput = document.querySelectorAll('.text-input')
-    textInput.forEach(el => {
-        if (el.value == '') el.classList.add('error') 
+    textInputs.forEach(el => {
+        if (el.value == '') {
+            el.classList.add('error')
+
+            textBoxes.forEach(textBox => {
+                textBox.innerHTML += "<p>campos obrigatórios</p>"
+            })
+        } 
     })
 })
+
+/* textBox.innerHTML */

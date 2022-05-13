@@ -1,0 +1,15 @@
+.form-section form div .check {
+    border-color: var(--value-border-color);
+    transition: 0.1s ease-in-out;
+}
+
+.form-section form div .error {border-color: var(--required--color);}
+
+.form-section form div p {
+    color: var(--required--color);
+    position: relative;
+    bottom: 13px;
+    right: 113px;
+}
+
+.form-section form div:nth-child(4) p:last-child {bottom: -2px;}

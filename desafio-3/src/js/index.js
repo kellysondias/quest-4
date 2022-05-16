@@ -20,13 +20,24 @@ textInputs.forEach(el => {
 })
 
 button.addEventListener('click', () => {
-    textInputs.forEach(el => {
-        if (el.value == '') {
-            el.classList.add('error')
 
-            textBoxes.forEach(textBox => {
-                textBox.innerHTML += "<p>campos obrigatórios</p>"
-            })
-        } 
+    let textInput = textInputs.map(textInput => {
+        return textInput
     })
+
+    console.log(textInput)
+
+/*     textInputs.forEach(textInput => {
+        if (textInput.value == '') {
+            textInput.classList.add('error')
+        }
+    })
+
+    textBoxes.forEach(textBox => {
+        console.log(textBox)
+        textBox.innerHTML += "<p>campo obrigatório</p>"
+    }) */
+
 })
+
+

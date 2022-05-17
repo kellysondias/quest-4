@@ -5,17 +5,17 @@
 */
 
 const form = document.querySelector('form')
-const button = document.getElementById('btn')
 const textInputs = document.querySelectorAll('.text-input')
-const textBoxes = document.querySelectorAll('div')
+const errorMessages = document.querySelectorAll('p')
 
 form.addEventListener('submit', event => {
     event.preventDefault()
     textInputs.forEach((textInput, index) => {
-        if (textInput.value == '') {
+        console.log(textInput, index)
+        /* if (textInput.value == '') {
             textInput.classList.add('error')
-            textBoxes[index].style.display = 'block'
-        }
+            errorMessages[index].style.display = 'block'
+        } */
     })
 })
 

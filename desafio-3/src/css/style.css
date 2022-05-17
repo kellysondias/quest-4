@@ -64,7 +64,7 @@ main {
 
 .form-section form #required-warning {margin-top: 15px;}
 
-.form-section form input[type="button"] {
+.form-section form button[type="submit"] {
     width: 300px;
     margin: 0 auto;
     margin-bottom: 12px;

@@ -11,8 +11,15 @@ const textBoxes = document.querySelectorAll('div')
 
 form.addEventListener('submit', event => {
     event.preventDefault()
+    textInputs.forEach((textInput, index) => {
+        if (textInput.value == '') {
+            textInput.classList.add('error')
+            textBoxes[index].style.display = 'block'
+        }
+    })
 })
 
+/* 
 textInputs.forEach(el => {
     el.addEventListener('keypress', () => {
         el.classList.add('check')
@@ -20,14 +27,11 @@ textInputs.forEach(el => {
 })
 
 button.addEventListener('click', () => {
-
-    let textInput = textInputs.map(textInput => {
-        return textInput
-    })
+    let textInput = textInputs.forEach(textInput => {})
 
     console.log(textInput)
 
-/*     textInputs.forEach(textInput => {
+    textInputs.forEach(textInput => {
         if (textInput.value == '') {
             textInput.classList.add('error')
         }
@@ -36,8 +40,5 @@ button.addEventListener('click', () => {
     textBoxes.forEach(textBox => {
         console.log(textBox)
         textBox.innerHTML += "<p>campo obrigatório</p>"
-    }) */
-
-})
-
-
+    })
+}) */

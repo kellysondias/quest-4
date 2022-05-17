@@ -6,6 +6,7 @@
 .form-section form div .error {border-color: var(--required--color);}
 
 .form-section form div p {
+    display: none;
     color: var(--required--color);
     position: relative;
     bottom: 13px;

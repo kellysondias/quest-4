@@ -4,7 +4,7 @@
                  - Transformar event listener do button em função limpa
 */
 
-const form = document.querySelector('form')
+const form = document.getElementById('form')
 const textInputs = document.querySelectorAll('.text-input')
 const errorMessages = document.querySelectorAll('p')
 
@@ -12,10 +12,10 @@ form.addEventListener('submit', event => {
     event.preventDefault()
     textInputs.forEach((textInput, index) => {
         console.log(textInput, index)
-        /* if (textInput.value == '') {
+        if (textInput.value == '') {
             textInput.classList.add('error')
             errorMessages[index].style.display = 'block'
-        } */
+        }
     })
 })
 

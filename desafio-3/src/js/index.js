@@ -15,7 +15,7 @@ form.addEventListener('submit', event => {
 })
 
 textInputs.forEach(textInput => {
-    textInput.addEventListener('keypress', () => {
+    textInput.addEventListener('keydown', () => {
         if (textInput.value !== '') {
             textInput.classList.remove('error')
             textInput.nextElementSibling.classList.add('hide')

@@ -11,34 +11,15 @@ const errorMessages = document.querySelectorAll('p')
 form.addEventListener('submit', event => {
     event.preventDefault()
     textInputs.forEach((textInput, index) => {
-        console.log(textInput, index)
         if (textInput.value == '') {
             textInput.classList.add('error')
-            errorMessages[index].style.display = 'block'
+            textInput.nextElementSibling.classList.add('show')
         }
     })
 })
 
-/* 
-textInputs.forEach(el => {
-    el.addEventListener('keypress', () => {
-        el.classList.add('check')
+textInputs.forEach(input => {
+    input.addEventListener('change', () => {
+        console.log('funcionou');
     })
 })
-
-button.addEventListener('click', () => {
-    let textInput = textInputs.forEach(textInput => {})
-
-    console.log(textInput)
-
-    textInputs.forEach(textInput => {
-        if (textInput.value == '') {
-            textInput.classList.add('error')
-        }
-    })
-
-    textBoxes.forEach(textBox => {
-        console.log(textBox)
-        textBox.innerHTML += "<p>campo obrigatório</p>"
-    })
-}) */

@@ -40,7 +40,7 @@ textarea::placeholder {
     font-weight: 700;
 }
 
-button[type="submit"] {
+input[type="submit"] {
     color: var(--white);
     background-color: var(--bg-button-color);
     font-weight: var(--bold-font-weight);

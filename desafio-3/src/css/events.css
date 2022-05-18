@@ -1,11 +1,11 @@
-.form-section form div .check {
+form div .check {
     border-color: var(--value-border-color);
     transition: 0.1s ease-in-out;
 }
 
-.form-section form div .error {border-color: var(--required--color);}
+form div .error {border-color: var(--required--color);}
 
-.form-section form div p {
+form div p {
     display: none;
     color: var(--required--color);
     position: relative;
@@ -13,4 +13,6 @@
     right: 113px;
 }
 
-/* .form-section form div:nth-child(4) p:last-child {} */
+form div:nth-child(4) p:last-child {top: 3px;}
+
+p.show {display: block;}

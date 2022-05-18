@@ -26,7 +26,7 @@ main {
 .text h1,
 .text p {color: var(--white);}
 
-.form-section form {
+form {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
@@ -35,17 +35,17 @@ main {
     background-color: var(--white);
 }
 
-.form-section form div input, 
-.form-section form div textarea,
-.form-section form span {font-size: 1.5rem;}
+form div input, 
+form div textarea,
+form span {font-size: 1.5rem;}
 
-.form-section form div input {
+form div input {
     margin-bottom: 15px;
     padding: 8px 0;
 }
 
-.form-section form div input, 
-.form-section form div textarea {
+form div input, 
+form div textarea {
     max-width: 298px;
     width: 100%;
     padding-left: 10px;
@@ -53,18 +53,18 @@ main {
     border-radius: 5px;
 }
 
-.form-section form div textarea {
+form div textarea {
     height: 100px;
     padding-top: 8px;
 }
 
-.form-section form span {
+form span {
     margin: 7px 0 20px -5px; 
 }
 
-.form-section form #required-warning {margin-top: 15px;}
+#required-warning {margin-top: 15px;}
 
-.form-section form button[type="submit"] {
+form input[type="submit"] {
     width: 300px;
     margin: 0 auto;
     margin-bottom: 12px;
@@ -74,9 +74,9 @@ main {
     cursor: pointer;
 }
 
-.form-section form div {position: relative;}
+form div {position: relative;}
 
-.form-section form div span {
+form div span {
     font-size: 8px;
     position: absolute;
     margin-left: 2px;
@@ -85,11 +85,11 @@ main {
     color: var(--required--color);
 }
 
-.form-section form div:nth-child(4) span {
+form div:nth-child(4) span {
     top: 106px;
 }
 
-.form-section form div {
+form div {
     display: flex;
     justify-content: center;
     align-items: center;

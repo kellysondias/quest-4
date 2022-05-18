@@ -1,6 +1,5 @@
 const form = document.getElementById('form')
 const textInputs = document.querySelectorAll('.text-input')
-const errorMessages = document.querySelectorAll('p')
 
 form.addEventListener('submit', event => {
     event.preventDefault()

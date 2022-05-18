@@ -1,9 +1,9 @@
-form div .check {
+.check {
     border-color: var(--value-border-color);
     transition: 0.1s ease-in-out;
 }
 
-form div .error {border-color: var(--required--color);}
+.error {border-color: var(--required--color);}
 
 form div p {
     display: none;
@@ -15,4 +15,4 @@ form div p {
 
 form div:nth-child(4) p:last-child {top: 3px;}
 
-p.show {display: block;}
+.show {display: block;}

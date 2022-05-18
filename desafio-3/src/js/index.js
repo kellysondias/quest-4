@@ -3,7 +3,7 @@ const textInputs = document.querySelectorAll('.text-input')
 
 form.addEventListener('submit', event => {
     event.preventDefault()
-    textInputs.forEach((textInput) => {
+    textInputs.forEach(textInput => {
         if (textInput.value == '') {
             textInput.classList.add('error')
             textInput.nextElementSibling.classList.add('show')
@@ -17,8 +17,9 @@ form.addEventListener('submit', event => {
 textInputs.forEach(textInput => {
     textInput.addEventListener('keypress', () => {
         if (textInput.value !== '') {
-            textInput.classList.add('check')
+            textInput.classList.remove('error')
             textInput.nextElementSibling.classList.add('hide')
+            textInput.classList.add('check')
         }
     })
 })
